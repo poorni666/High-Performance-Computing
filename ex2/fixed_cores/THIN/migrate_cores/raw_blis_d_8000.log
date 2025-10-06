@@ -1,0 +1,16 @@
+
+ This example computes real matrix C=alpha*A*B+beta*C using 
+ BLAS function dgemm, where A, B, and  C are matrices and 
+ alpha and beta are scalars
+
+ Initializing data for matrix multiplication C=A*B for matrix 
+ A(8000x8000) and matrix B(8000x8000)
+
+ Using double 
+
+ Computing matrix product using gemm function via CBLAS interface 
+
+ Elapsed time 1.205041828 s
+
+
+8000x8000x8000	1.205042 s	849.763034 GFLOPS
