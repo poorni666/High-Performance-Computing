@@ -3,10 +3,10 @@
 The project is organized into two main exercises:
 
 ## Repository Structure
-├── ex1/ (Contains the parallel Game of Life simulation)
-├── ex2/ (Contains the BLIS vs. OpenBLAS benchmark)
-├── report_hpc.pdf 
-└──README.md 
+├── ex1/ (Contains the parallel Game of Life simulation)  
+├── ex2/ (Contains the BLIS vs. OpenBLAS benchmark)   
+├── report_hpc.pdf   
+└──README.md   
 ### Exercise 1: Game of Life
 Implement and analyze the parallel performance of Conway’s Game of Life using **OpenMP**, **MPI**, and their hybrid combination on the Orfeo HPC cluster.
 
@@ -18,7 +18,7 @@ This excercise simulates the Game of Life on a 2D grid and evaluates:
 ## How to Run
 ```bash
 # Compile
-module load
+module load <module>
 make clean
 make 
 
@@ -26,22 +26,21 @@ make
 sbatch openmp.sh
 sbatch strong_scaling.sh
 sbatch weak_scaling.sh
-  bash ```
+```
 
 Exercise 2 – GEMV Benchmark (BLIS vs OpenBLAS)
 Compare the performance of **BLIS** and **OpenBLAS** libraries for the matrix–vector multiplication (GEMV) operation.
 
-This benchmark measures floating-point performance of GEMV under different:
+This benchmark measures floating-point performance  of GEMV under different (Libraries (BLIS vs OpenBLAS):
 - fixed_matrix
 - fixed_core
-- Libraries (BLIS vs OpenBLAS)
 
 ## How to Run
 ```bash
 module load ( library )
 make 
-
-
-
+# Submit jobs
+sbatch fixed_matrix.sh
+sbatch fixed_cores.sh
 
 ### Exercise 2: BLIS vs. OpenBLAS GEMM Benchmark
