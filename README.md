@@ -28,7 +28,7 @@ sbatch strong_scaling.sh
 sbatch weak_scaling.sh
 ```
 
-Exercise 2 – GEMV Benchmark (BLIS vs OpenBLAS)
+### Exercise 2 – GEMV Benchmark (BLIS vs OpenBLAS)
 Compare the performance of **BLIS** and **OpenBLAS** libraries for the matrix–vector multiplication (GEMV) operation.
 
 This benchmark measures floating-point performance  of GEMV under different (Libraries (BLIS vs OpenBLAS):
