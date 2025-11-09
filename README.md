@@ -8,7 +8,7 @@ The project is organized into two main exercises:
 ├── report_hpc.pdf   
 └──README.md   
 ### Exercise 1: Game of Life
-Implement and analyze the parallel performance of Conway’s Game of Life using **OpenMP**, **MPI**, and their hybrid combination on the Orfeo HPC cluster.
+Implement and analyze the parallel performance of Conway’s Game of Life using hybrid **OpenMP**, **MPI** on the Orfeo HPC cluster.
 
 This excercise simulates the Game of Life on a 2D grid and evaluates:
 - OpenMP strong scaling 
