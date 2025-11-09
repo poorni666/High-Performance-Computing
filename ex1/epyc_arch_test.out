@@ -1,0 +1,101 @@
+=== EPYC Node Architecture ===
+Hostname: epyc008.hpc.rd.areasciencepark.it
+
+=== CPU Information ===
+CPU(s):                               128
+On-line CPU(s) list:                  0-127
+Model name:                           AMD EPYC 7H12 64-Core Processor
+Thread(s) per core:                   1
+Core(s) per socket:                   64
+Socket(s):                            2
+CPU(s) scaling MHz:                   64%
+NUMA node(s):                         8
+NUMA node0 CPU(s):                    0-15
+NUMA node1 CPU(s):                    16-31
+NUMA node2 CPU(s):                    32-47
+NUMA node3 CPU(s):                    48-63
+NUMA node4 CPU(s):                    64-79
+NUMA node5 CPU(s):                    80-95
+NUMA node6 CPU(s):                    96-111
+NUMA node7 CPU(s):                    112-127
+
+=== Memory Information ===
+available: 8 nodes (0-7)
+node 0 cpus: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+node 0 size: 63923 MB
+node 0 free: 414 MB
+node 1 cpus: 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
+node 1 size: 64505 MB
+node 1 free: 653 MB
+node 2 cpus: 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47
+node 2 size: 64505 MB
+node 2 free: 2937 MB
+node 3 cpus: 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63
+node 3 size: 64493 MB
+node 3 free: 1356 MB
+node 4 cpus: 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79
+node 4 size: 64505 MB
+node 4 free: 7815 MB
+node 5 cpus: 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95
+node 5 size: 64505 MB
+node 5 free: 35261 MB
+node 6 cpus: 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111
+node 6 size: 64451 MB
+node 6 free: 34254 MB
+node 7 cpus: 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127
+node 7 size: 64496 MB
+node 7 free: 43296 MB
+node distances:
+node     0    1    2    3    4    5    6    7 
+   0:   10   12   12   12   32   32   32   32 
+   1:   12   10   12   12   32   32   32   32 
+   2:   12   12   10   12   32   32   32   32 
+   3:   12   12   12   10   32   32   32   32 
+   4:   32   32   32   32   10   12   12   12 
+   5:   32   32   32   32   12   10   12   12 
+   6:   32   32   32   32   12   12   10   12 
+   7:   32   32   32   32   12   12   12   10 
+
+=== SLURM Environment ===
+SLURM_CLUSTER_NAME=orfeo
+SLURM_CONF=/var/spool/slurm/d/conf-cache/slurm.conf
+SLURM_CPUS_ON_NODE=1
+SLURM_CPUS_PER_TASK=1
+SLURMD_NODENAME=epyc008
+SLURM_GTIDS=0
+SLURM_JOB_ACCOUNT=dssc
+SLURM_JOB_CPUS_PER_NODE=1
+SLURM_JOB_END_TIME=1760535732
+SLURM_JOB_GID=10080198
+SLURM_JOB_ID=576475
+SLURM_JOBID=576475
+SLURM_JOB_NAME=epyc_test
+SLURM_JOB_NODELIST=epyc008
+SLURM_JOB_NUM_NODES=1
+SLURM_JOB_PARTITION=EPYC
+SLURM_JOB_QOS=normal
+SLURM_JOB_START_TIME=1760535132
+SLURM_JOB_UID=10080198
+SLURM_JOB_USER=pkrishna
+SLURM_LOCALID=0
+SLURM_MEM_PER_CPU=1024
+SLURM_NNODES=1
+SLURM_NODEID=0
+SLURM_NODELIST=epyc008
+SLURM_NPROCS=1
+SLURM_NTASKS=1
+SLURM_OOM_KILL_STEP=0
+SLURM_PRIO_PROCESS=0
+SLURM_PROCID=0
+SLURM_SUBMIT_DIR=/orfeo/cephfs/home/dssc/pkrishna/src/ex1
+SLURM_SUBMIT_HOST=login01.hpc.rd.areasciencepark.it
+SLURM_TASK_PID=2761600
+SLURM_TASKS_PER_NODE=1
+SLURM_TOPOLOGY_ADDR=epyc008
+SLURM_TOPOLOGY_ADDR_PATTERN=node
+SLURM_TRES_PER_TASK=cpu=1
+
+=== OMP Environment ===
+OMPI_MCA_btl=^ofi,usnic,openib
+OMPI_MCA_mtl=^ofi
+OMPI_MCA_plm_slurm_args=--external-launcher

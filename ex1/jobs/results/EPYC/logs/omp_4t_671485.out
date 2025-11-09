@@ -1,0 +1,5 @@
+Running EPYC OpenMP scaling: 1 node, 1 task, 4 threads
+EPYC Architecture: 2 sockets, 8 NUMA nodes, 128 cores
+Error opening file for reading: No such file or directory
+Error reading PGM file
+srun: error: epyc008: task 0: Exited with exit code 1

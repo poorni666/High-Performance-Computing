@@ -1,0 +1,4 @@
+[Wed Oct 15 11:16:53 PM CEST 2025] Running CLOSE binding...
+rm -rf *.x
+gcc -DUSE_DOUBLE -DOPENBLAS gemm.c -m64 -I/opt/programs/openBLAS/0.3.29/include -L//opt/programs/openBLAS/0.3.29/lib -lopenblas -lpthread -o gemm_oblas.x -fopenmp
+gcc -DUSE_DOUBLE  -DBLIS gemm.c -m64 -I/u/dssc/pkrishna/myblis/include/blis -L//u/dssc/pkrishna/myblis/lib -o gemm_blis.x -lpthread  -lblis -fopenmp -lm
