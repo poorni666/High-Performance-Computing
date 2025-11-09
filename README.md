@@ -42,5 +42,3 @@ make
 # Submit jobs
 sbatch fixed_matrix.sh
 sbatch fixed_cores.sh
-
-### Exercise 2: BLIS vs. OpenBLAS GEMM Benchmark
